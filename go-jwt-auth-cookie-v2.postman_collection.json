@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "759ef3fd-9922-4946-b9b1-5e315c9e7684",
+		"name": "go-jwt-auth-cookie-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "855534"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@gmail.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"validate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
